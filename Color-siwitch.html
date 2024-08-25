@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Mode Toggle Test</title>
+    <style>
+        :root {
+            --color--background: #ffffff;
+            --color--text: #333333;
+            --color--primary: #0066cc;
+            --dark--background: #333333;
+            --dark--text: #ffffff;
+            --dark--primary: #4d94ff;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--color--background);
+            color: var(--color--text);
+            transition: background-color 0.5s, color 0.5s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            color: var(--color--primary);
+        }
+
+        button {
+            background-color: var(--color--primary);
+            color: var(--color--background);
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 200px;
+            margin-top: 20px;
+        }
+    </style>
+     <script 
+     tr-color-vars="primary,text,background" 
+     duration="0.5" 
+     ease="power1.out" 
+        src="theme.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <h1>Color Mode Toggle Test</h1>
+    <button tr-color-toggle>Toggle Dark Mode</button>
+    <p>This is some sample text to demonstrate the color change.</p>
+    <img class="theme-asset" src="https://via.placeholder.com/200x100.png?text=Light+Mode" 
+         data-light-src="https://via.placeholder.com/200x100.png?text=Light+Mode" 
+         data-dark-src="https://via.placeholder.com/200x100.png?text=Dark+Mode" 
+         alt="Theme Asset">
+    <script tr-color-vars="background,text,primary" duration="0.5" ease="power1.out"></script>
+</body>
+</html>
