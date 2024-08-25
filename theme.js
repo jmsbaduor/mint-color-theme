@@ -17,7 +17,7 @@ function colorModeToggle() {
     console.warn("Script tag with tr-color-vars attribute not found");
     return;
   }
-  let colorModeDuration = attr(0.5, scriptTag.getAttribute("duration"));
+  let colorModeDuration = attr(0, scriptTag.getAttribute("duration"));
   let colorModeEase = attr("power1.out", scriptTag.getAttribute("ease"));
   const cssVariables = scriptTag.getAttribute("tr-color-vars");
   if (!cssVariables.length) {
