@@ -10,7 +10,6 @@
  * Released on: November 28, 2023
  *
  * This script provides advanced dark mode functionality, including:
- * - Smooth transition between light and dark modes
  * - Persistent theme preference storage
  * - Automatic theme switching based on system preferences
  * - Dynamic asset switching for different theme modes
