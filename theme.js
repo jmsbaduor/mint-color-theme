@@ -1,7 +1,6 @@
 /**
  * Dark Mode Toggle 2
  * Copyright 2024 by James Baduor
- * Released under the MIT License
  * Released on: August 26, 2024
  * 
  * Forked from: https://github.com/timothydesign/scripts/blob/main/dark-mode-toggle.js
