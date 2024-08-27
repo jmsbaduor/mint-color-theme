@@ -26,7 +26,7 @@
  * <button tr-color-dark>Dark</button>
  */
 
-f(function() {
+(function() {
     const htmlElement = document.documentElement;
     const scriptTag = document.querySelector("[tr-color-vars]");
     const cssVariables = scriptTag ? scriptTag.getAttribute("tr-color-vars").split(",") : [];
